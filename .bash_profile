@@ -17,3 +17,17 @@ shopt -s histappend
 
 # If possible, add tab completion for many more commands
 [ -f /etc/bash_completion ] && source /etc/bash_completion
+
+# ###
+# Jon's additions:
+# ###
+
+# Delete Xcode's derived data folder
+alias fuxcode='rm -rf ~/Library/Developer/Xcode/DerivedData'
+
+# Make prompt in the following form:
+# top_level_directory_name(git_branch_name) [hamburger unicode character]
+PS1='\[\e[1;32m\]\W$(__git_ps1 "(%s)") 🍔  \[\e[0m\] '
+
+# Reinstall cocoapods in an Xcode project's directory
+alias podstall='rm -rf Podfile.lock; rm -rf Pods; pod install --verbose'
