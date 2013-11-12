@@ -28,7 +28,7 @@ alias fuxcode='rm -rf ~/Library/Developer/Xcode/DerivedData'
 # Make prompt in the following form:
 # top_level_directory_name(git_branch_name) [hamburger unicode character]source ~/.git-prompt.sh
 source ~/.git-prompt.sh
-PS1='\[\e[1;32m\]\W$(__git_ps1 "(%s)") 🍔  \[\e[0m\] '
+PS1='\[\e[1;32m\]\W$(__git_ps1 "(%s)") 🏀  \[\e[0m\] '
 
 # Reinstall cocoapods in an Xcode project's directory
 alias podstall='rm -rf Podfile.lock; rm -rf Pods; pod install --verbose'
