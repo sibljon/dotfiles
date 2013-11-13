@@ -24,6 +24,15 @@
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
 
+	# Ray's commands
+	st = status
+    co = checkout
+    ci = commit
+    rb = rebase
+    ff = pull --ff-only
+    publish = "!sh -c 'git push --set-upstream origin $(git symbolic-ref HEAD)' -"
+    unpublish = "!sh -c 'git push origin :$(git symbolic-ref HEAD)' -"
+
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
