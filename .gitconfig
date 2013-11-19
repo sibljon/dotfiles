@@ -33,6 +33,10 @@
     publish = "!sh -c 'git push --set-upstream origin $(git symbolic-ref HEAD)' -"
     unpublish = "!sh -c 'git push origin :$(git symbolic-ref HEAD)' -"
 
+    # Jons' commands
+    sa = add -A && git stash
+    cam = commit -am
+
 [apply]
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
