@@ -34,7 +34,7 @@
     unpublish = "!sh -c 'git push origin :$(git symbolic-ref HEAD)' -"
 
     # Jons' commands
-    sa = add -A && git stash
+    sa = !git add -A && git stash
     cam = commit -am
 
 [apply]
